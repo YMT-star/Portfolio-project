@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>My Portfolio</title>
+</head>
+
+<body class="body">
+    <!-- Header -->
+    <nav>
+        <div class="header">
+            <h2>Portfolio</h2>
+            <div class="head-container">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="search-box">
+
+                <i class="fa-solid fa-bars" id="bar"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <div class="search-area">
+                    <input type="text" placeholder="search here...">
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div id="home">
+
+        <div class="home-contant">
+            <div class="contant-header">
+                <a>"I'm a<span> Web Develober"</span></a>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolor consequuntur quae aliquam
+                dolorum
+                rem quasi cum aut doloremque, optio, saepe quos tenetur ab adipisci reprehenderit voluptatem, id ad
+                nam.
+            </p>
+            <button class="btn">Learn more</button>
+        </div>
+        <div class="background">
+            <button id="bg-btn">BG-Color</button>
+            <ul class="color-list">
+                <li class="theme-buttons" data-color="#262626" style="background:#262626;"></li>
+                <li class="theme-buttons" data-color="#ffa300" style="background: yellow;"></li>
+                <li class="theme-buttons" data-color="#5d3125" style="background: #5d3125;"></li>
+                <li class="theme-buttons" data-color="#ff6666	" style="background: #ff6666	;"></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h1>About <span>Me</span></h1>
+                <h4>My name is Ye Min Tun:</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia odio id eius quod repellat
+                    quos sint eos, mollitia, iusto corrupti optio repudiandae. Ullam est, corporis, quasi ut
+                    perspiciatis a dicta minus cupiditate esse consectetur vero doloremque error, fugiat alias!</p>
+            </div>
+            <div class="about-MyImage">
+                <img src="./My-images/my-photo.jpg" alt="photo">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="skills-head"><span>My</span> Skills</h1>
+        <div class="skills-container">
+            <div class="box-1">
+                <li>
+                    <h3>HTML</h3>
+                    <span class="bar"><span class="html">75%</span></span>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                    <span class="bar"><span class="css">70%</span></span>
+                </li>
+                <li>
+                    <h3>JAVASCRIPT</h3>
+                    <span class="bar"><span class="javascript">60%</span></span>
+                </li>
+            </div>
+            <div class="box-2">
+                <li>
+                    <h3>BOOTSTRAP</h3>
+                    <span class="bar"><span class="bootstrap">80%</span></span>
+                </li>
+                <li>
+                    <h3>TAILWIND</h3>
+                    <span class="bar"><span class="tailwind">75%</span></span>
+                </li>
+                <li>
+                    <h3>PHP</h3>
+                    <span class="bar"><span class="php">65%</span></span>
+                </li>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h1>My <span>Portfolio</span> </h1>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./My-images/work.jpg" alt="">
+            </div>
+            <div class="portfolio-box">
+                <img src="./My-images/coffee.jpg" alt="">
+            </div>
+            <div class="portfolio-box">
+                <img src="./My-images/food.jpeg" alt="">
+            </div>
+            <div class="portfolio-box">
+                <img src="./My-images/online-educa.jpg" alt="">
+            </div>
+            <div class="portfolio-box">
+                <img src="./My-images/resturent.jpg" alt="">
+            </div>
+            <div class="portfolio-box">
+                <img src="./My-images/hotel.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+
+        <div class="contact-container">
+            <div class="contact-box">
+                <h1>Contact <span>Me</span></h1>
+                <a href="mailto:tum700632@gmail.com" target="_blank"><i
+                        class="fa-solid fa-paper-plane"></i>tun700632@gmail.com</a>
+                <a href="tel:+95974693595" target="_blank"><i class="fa-solid fa-phone"></i>09974693595</a>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <button>download CV</button>
+            </div>
+            <div class="submit-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="writer">
+            <h2>HTML,CSS AND JAVASCRIPT web-design by Y.M.T .</h2>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
