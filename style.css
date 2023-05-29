@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
 :root{
-    --main-color:rgb(40, 29, 63);
+    --main-color:#130102;
 }
 *{
     margin: 0;
@@ -27,19 +27,19 @@ nav{
     justify-content: space-between;
     padding: 0 30px;
     height: 60px;
-    background: #615e55;
+    background: #292d36;
     align-items: center;
 }
 .header h2{
     position: relative;
     color: rgb(229, 245, 253);
-    font-size: 2rem;
-    font-weight: 900;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .head-container a{
     padding: 0 20px;
-    font-size: 1.3rem;
+    font-size: .9rem;
     color: #ffff;
     font-weight: 500;
 }
@@ -52,7 +52,7 @@ nav{
     gap: 20px;
 }
 .search-box i{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
 }
 #search-icon{
@@ -67,11 +67,16 @@ nav{
 .search-area {
     transform: scale(0);
 }
-.search-area input{
+.search-area{
     position: absolute;
-    right: 30px;
-    margin-top: 45px;
-    width: 300px;
+    right: 0;
+    top: 65px;
+    background: #000;
+    width: 350px;
+    
+}
+.search-area input{
+    width: 100%;
     height: 25px;
     padding: 5px;
     border-radius: 5px;
@@ -103,62 +108,67 @@ nav{
 }
 
 #home .home-contant a{
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 #home .home-contant span{
     color: #737373;
     animation: colorchange 10s infinite alternate;
 }
+@keyframes colorchange {
+    0% {
+        color: #11d193;
+    }
+
+    20% {
+        color: #f56e19;
+    }
+
+    40% {
+        color: #f50051;
+    }
+
+    60% {
+        color: #8400c0;
+    }
+
+    80% {
+        color: #84000a;
+    }
+
+    100% {
+        color: #17e716;
+    }
+}
 #home .home-contant p{
-    font-size: 1.2rem;
+    font-size: .9rem;
     padding-top: 10px;
-    letter-spacing: .5px;
+    letter-spacing: .1rem;
     line-height: 1.5rem;
     width: 700px;
     color: rgb(228, 249, 252);
 }
 #home .home-contant .btn{
     background: white;
-    border: 2px solid #262626;
+    border: 2px solid #263963;
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
-    transition: transform 1s ease;
+    /* transition: transform 1s ease; */
 }
 #home .home-contant .btn:hover{
     color: rgb(188, 195, 195);
-    border: 2px solid #737373;
-    letter-spacing: .2rem;
-    background: linear-gradient(120deg,#333333 50%,#737373);
-    transform: translateY(8px);
+    border: 2px solid #fff;
+    background: #263963;
+    /* transform: translateY(8px); */
 }
-@keyframes colorchange{
-    0%{
-        color:#11d193;
-    }
-    20% {
-        color: #f56e19;
-    }
-    40%{
-        color:#f50051;
-    }
-    60%{
-        color:#8400c0;
-    }
-    80%{
-        color:#84000a;
-    }
-    100%{
-        color:#17e716;
-    }
-}
+
 /* background */
 #home .background #bg-btn{
     position: fixed;
-    top: 70px;
+    top: 100px;
     right: 0;
     padding: 3px;
     font-weight: 500;
@@ -169,7 +179,7 @@ nav{
 }
 .background .color-list{
     position: fixed;
-    top: 90px;
+    top: 130px;
     right: 5px;
     transform: scale(0);
     transition: 2s;
@@ -211,7 +221,7 @@ section{
     line-height: 1.5rem;
 }
 .about-text h1{
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 900;
     padding-bottom: 20px;
     padding-top: 30px;
@@ -222,6 +232,9 @@ section{
 .about-text h4{
     font-size: 1.3rem;
     padding:20px 0;
+}
+.about-text p{
+    font-size: 0.9em;
 }
 #about .about-container .about-MyImage{
     width:300px;
@@ -243,12 +256,13 @@ section{
 }
 
 #skills .skills-head{
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 #skills .skills-head span{
     color: #737373;
 }
+
 #skills .skills-container{
     padding: 30px;
     display: flex;
@@ -256,6 +270,10 @@ section{
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+#skills .skills-container h3 {
+    font-size: .8rem;
+    padding:5px 0;
 }
 #skills li{
     margin: 20px 0;
@@ -265,7 +283,7 @@ section{
     background: white;
     display: block;
     height: 20px;
-    width: 400px;
+    width: 350px;
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(.25, .8, 25, 1);
@@ -367,7 +385,7 @@ section{
 }
 #portfolio h1{
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding: 50px 0;
 }
 #portfolio span{
@@ -412,10 +430,10 @@ section{
 #contact .contact-container .contact-box{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 .contact-box h1{
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 .contact-box span{
     color: #737373;
@@ -450,7 +468,7 @@ section{
     gap: 25px;
 }
 .submit-form input{
-    width: 400px;
+    width: 350px;
     height: 30px;
     border-radius: 10px;
     border: none;
