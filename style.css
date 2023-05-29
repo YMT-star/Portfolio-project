@@ -319,7 +319,7 @@ section{
     width: 75%;
 }
 
-.php {
+.jquery {
     animation: html 3s;
     width: 65%;
 }
@@ -370,7 +370,7 @@ section{
     }
 }
 
-@keyframes php {
+@keyframes jquery {
     from {
         width: 0;
     }
